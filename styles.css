@@ -85,6 +85,13 @@ footer p{
     header {
         font-size: 1.2em;
     }
+
+    .slack-email,
+    .time-info {
+        padding-left: 1em;
+        margin-top: 10px;
+    }
+
     
     #profile img{
         width: 100%;
