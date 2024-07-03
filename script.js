@@ -22,12 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentDateElement = document.getElementById('current-date');
         const now = new Date();
         const day = String(now.getUTCDate()).padStart(2, '0');
-        const month = String(now.getUTCMonth() + 1).padStart(2, '0'); // Months are zero-indexed
+        const month = String(now.getUTCMonth() + 1).padStart(2, '0');
         const year = now.getUTCFullYear();
         currentDateElement.textContent = `${day}-${month}-${year}`;
     }
 
-    // Initial update and set interval for the current time
+
     updateTime();
     setInterval(updateTime, 1000);
     updateDay();
